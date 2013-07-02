@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BioDroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="mensagem_inicial">Biology</string>
+    <string name="botao_inicial">Entrar</string>
+    <string name="title_activity_questoes">Questão</string>
+    <string name="texto_questao">Questão</string>
+    <string name="texto_botao_seguinte">></string>
+    <string name="title_activity_tematicas">BioDroid</string>
+    <string name="tematicas">Temáticas</string>
+    <string name="mensagem">Entrar</string>
+
+</resources>
