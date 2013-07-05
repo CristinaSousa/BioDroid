@@ -8,9 +8,87 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TematicasActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tematicas" />
+    <LinearLayout 
+   		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+   		android:orientation="vertical"
+    	android:layout_marginBottom="5sp"
+    	android:layout_marginLeft="2sp"
+    	android:layout_marginRight="5sp"
+    	android:layout_marginTop="0sp"     >
+   <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <ImageButton          
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button_topleft"
+        	android:layout_marginBottom="5sp"
+       		android:layout_marginLeft="2sp"
+        	android:layout_marginRight="5sp"
+        	android:layout_marginTop="0sp"
+        	android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/animalkingdom"
+        	android:onClick="open_quiz_photosynthesis"
+            />
+
+        <ImageButton
+            android:id="@+id/button_topright"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="0sp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/genetics"
+            android:onClick="open_underConstrution"
+            android:background="@null" />
+
+   	 	</LinearLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button_repeat"
+    		android:layout_marginBottom="5sp"
+        	android:layout_marginLeft="2sp"
+        	android:layout_marginRight="5sp"
+        	android:layout_marginTop="0sp"   
+        	android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plants"  
+            android:onClick="open_underConstrution"/>
+
+              <ImageButton
+                  android:id="@+id/button_next"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="5sp"
+                  android:layout_marginLeft="2sp"
+                  android:layout_marginRight="5sp"
+                  android:layout_weight="1"
+                  android:background="@null"
+                  android:scaleType="fitCenter"
+                  android:src="@drawable/mircoorgan" 
+                  android:onClick="open_underConstrution"/>
+
+			</LinearLayout>
+
+   
+
+</LinearLayout>
 
 </RelativeLayout>

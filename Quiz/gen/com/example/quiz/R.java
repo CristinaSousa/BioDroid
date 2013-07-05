@@ -21,26 +21,36 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int biologia=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int animalkingdom=0x7f020000;
+        public static final int biologia=0x7f020001;
+        public static final int genetics=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int mircoorgan=0x7f020004;
+        public static final int plants=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
+        public static final int action_settings=0x7f080009;
         public static final int botao_seguinte=0x7f080002;
         public static final int button1=0x7f080001;
+        public static final int button_next=0x7f080008;
+        public static final int button_repeat=0x7f080007;
+        public static final int button_topleft=0x7f080005;
+        public static final int button_topright=0x7f080006;
         public static final int checkedTextView_op1=0x7f080004;
         public static final int mostra_resposta=0x7f080003;
         public static final int textView1=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_questoes=0x7f030001;
-        public static final int activity_tematicas=0x7f030002;
+        public static final int activity_notavaliable=0x7f030001;
+        public static final int activity_questoes=0x7f030002;
+        public static final int activity_tematicas=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
-        public static final int questoes=0x7f070001;
-        public static final int tematicas=0x7f070002;
+        public static final int notavaliable=0x7f070001;
+        public static final int questoes=0x7f070002;
+        public static final int tematicas=0x7f070003;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -51,8 +61,10 @@ public final class R {
         public static final int tematicas=0x7f050008;
         public static final int texto_botao_seguinte=0x7f050006;
         public static final int texto_questao=0x7f050005;
+        public static final int title_activity_notavaliable=0x7f05000a;
         public static final int title_activity_questoes=0x7f050004;
         public static final int title_activity_tematicas=0x7f050007;
+        public static final int under_constrution=0x7f05000b;
     }
     public static final class style {
         /** 

@@ -11,5 +11,7 @@
     <string name="title_activity_tematicas">BioDroid</string>
     <string name="tematicas">Temáticas</string>
     <string name="mensagem">Entrar</string>
+    <string name="title_activity_notavaliable">BioDroid</string>
+    <string name="under_constrution">Em construção &#8230;</string>
 
 </resources>

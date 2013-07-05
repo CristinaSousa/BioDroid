@@ -20,11 +20,6 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	public void abrir_paginaQuestoes (View view)
-	{
-		Intent intent = new Intent (this,Questoes.class);
-		startActivity(intent);		
-	}
 	
 	public void Abrir_tematicas (View view)
 	{

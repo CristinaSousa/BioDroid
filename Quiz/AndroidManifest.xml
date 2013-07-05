@@ -25,7 +25,7 @@
         <activity
             android:name="com.example.quiz.Questoes"
             android:label="@string/title_activity_questoes"
-            android:parentActivityName="com.example.quiz.MainActivity" >
+            android:parentActivityName="com.example.quiz.TematicasActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quiz.MainActivity" />
@@ -37,6 +37,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quiz.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.quiz.NotavaliableActivity"
+            android:label="@string/title_activity_notavaliable"
+            android:parentActivityName="com.example.quiz.TematicasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quiz.TematicasActivity" />
         </activity>
     </application>
 
