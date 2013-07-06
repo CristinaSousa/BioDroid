@@ -6,10 +6,22 @@
     <string name="mensagem_inicial">Biology</string>
     <string name="botao_inicial">Entrar</string>
     <string name="title_activity_questoes">Questão</string>
-    <string name="texto_questao">Questão</string>
+    <string name="texto_questao1">Q1: How grows a plant?</string>
+    <string name="texto_questao2">Q2: In photosynthesis plants transform &#8230;</string>
+    <string name="texto_questao3">Q3: The chlorophyll captures &#8230;</string>
     <string name="texto_botao_seguinte">></string>
     <string name="title_activity_tematicas">BioDroid</string>
     <string name="tematicas">Temáticas</string>
     <string name="mensagem">Entrar</string>
+    <string name="title_activity_notavaliable">BioDroid</string>
+    <string name="under_constrution">Em construção &#8230;</string>
+    <string name="title_activity_q1">BioDroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_q2">BioDroid</string>
+    <string name="title_activity_q3">BioDroid</string>
+    <string name="title_activity_result">BioDroid</string>
+    <string name="recursos">Resources:</string>
+    <string name="ajuda">Help</string>
+    
 
 </resources>
