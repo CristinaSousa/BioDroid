@@ -7,6 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -25,7 +29,7 @@
         <activity
             android:name="com.example.quiz.Questoes"
             android:label="@string/title_activity_questoes"
-            android:parentActivityName="com.example.quiz.MainActivity" >
+            android:parentActivityName="com.example.quiz.TematicasActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.quiz.MainActivity" />
@@ -33,6 +37,34 @@
         <activity
             android:name="com.example.quiz.TematicasActivity"
             android:label="@string/title_activity_tematicas"
+            android:parentActivityName="com.example.quiz.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quiz.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.quiz.NotavaliableActivity"
+            android:label="@string/title_activity_notavaliable"
+            android:parentActivityName="com.example.quiz.TematicasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.quiz.TematicasActivity" />
+        </activity>
+        <activity
+            android:name="com.example.quiz.Q1Activity"
+            android:label="@string/title_activity_q1" >
+        </activity>
+        <activity
+            android:name="com.example.quiz.Q2Activity"
+            android:label="@string/title_activity_q2" >
+        </activity>
+        <activity
+            android:name="com.example.quiz.Q3Activity"
+            android:label="@string/title_activity_q3" >
+        </activity>
+        <activity
+            android:name="com.example.quiz.ResultActivity"
+            android:label="@string/title_activity_result"
             android:parentActivityName="com.example.quiz.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

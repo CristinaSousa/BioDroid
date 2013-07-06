@@ -4,20 +4,50 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
-public class TematicasActivity extends Activity {
-
+public class ResultActivity extends Activity {
+	private static int contador;
+	private TextView texto;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tematicas);
+		setContentView(R.layout.activity_result);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		contador = Q3Activity.getContador(); 
+        RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1); 
+        bar.setRating(contador);
+        
+        ProgressBar pb = (ProgressBar)findViewById(R.id.progressBar1);
+        pb.setProgress(3);
+        
+        texto = (TextView) findViewById(R.id.textView1);
+        
+        if(contador<2)
+        {
+        	texto.setText("Attention! You need to study more!");
+        }
+        else 
+        {
+        	if(contador==2)
+        	{
+        		texto.setText("You are almost there! A little more study and you will understand the photosynthesis.");
+        	}
+        	else
+        	{
+        		texto.setText("Congratulations! You understand the photosynthesis.");
+        	}
+        	}
+        
+        	
 	}
 
 	/**
@@ -33,9 +63,19 @@ public class TematicasActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tematicas, menu);
+		getMenuInflater().inflate(R.menu.result, menu);
 		return true;
 	}
+	
+	// Evitar o botão retroceder
+	 @Override
+	public void onBackPressed()
+	{
+
+		 Intent intent = new Intent (this,MainActivity.class);
+	     startActivity(intent); 
+	}
+	 
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -53,20 +93,5 @@ public class TematicasActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void open_quiz_photosynthesis (View view)
-	{
-		Intent intent = new Intent (this,Q1Activity.class);
-		startActivity(intent);		
-	}
-	
-	public void open_underConstrution (View view)
-	{
-		Intent intent = new Intent (this,NotavaliableActivity.class);
-		startActivity(intent);		
-	}
-	
-	
-	
 
 }
