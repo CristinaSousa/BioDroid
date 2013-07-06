@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Q1Activity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal" >
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:maxHeight="16dip"
+            android:minHeight="16dip"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dip"
+            android:layout_toRightOf="@+id/ratingBar1"
+            android:max="3"
+            android:progress="0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/texto_questao2"
+            android:textSize="25sp" />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView_op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Choose_op1" />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView_op2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="25dp"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Choose_op2" />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView_op3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Choose_op3" />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView_op4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="35dp"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Choose_op4" />
+    </LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="left"
+     android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:text="@string/recursos"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/textView3"
+         android:layout_alignParentLeft="true"
+         android:text="@string/ajuda"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:onClick="open_wiki"
+         android:src="@drawable/wikipedia" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="30dp"
+         android:maxWidth="@dimen/activity_horizontal_margin"
+         android:onClick="open_youtube"
+         android:src="@drawable/youtube" />
+
+ </RelativeLayout>
+
+ 
+
+</LinearLayout>

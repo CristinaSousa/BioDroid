@@ -4,18 +4,16 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
-import android.content.Intent;
 import android.os.Build;
 
-public class TematicasActivity extends Activity {
+public class NotavaliableActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tematicas);
+		setContentView(R.layout.activity_notavaliable);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
@@ -33,7 +31,7 @@ public class TematicasActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tematicas, menu);
+		getMenuInflater().inflate(R.menu.notavaliable, menu);
 		return true;
 	}
 
@@ -53,20 +51,5 @@ public class TematicasActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void open_quiz_photosynthesis (View view)
-	{
-		Intent intent = new Intent (this,Q1Activity.class);
-		startActivity(intent);		
-	}
-	
-	public void open_underConstrution (View view)
-	{
-		Intent intent = new Intent (this,NotavaliableActivity.class);
-		startActivity(intent);		
-	}
-	
-	
-	
 
 }
