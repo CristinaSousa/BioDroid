@@ -26,4 +26,9 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent (this,TematicasActivity.class);
 		startActivity(intent);		
 	}
+	  @Override 
+      public void onBackPressed() { 
+              finish(); 
+      } 
+ 
 }
